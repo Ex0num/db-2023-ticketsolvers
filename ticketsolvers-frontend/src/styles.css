@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {font-family: Tittle-drawed; src: url(./assets/fuentes/HelvetiHand.ttf);}
+@font-face {font-family: Text-drawed; src: url(./assets/fuentes/IndieFlower-Regular.ttf);}
+@font-face {font-family: Tittle-drawed2; src: url(./assets/fuentes/Whatnot-Regular.ttf);}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Text-drawed}
+
+a {text-decoration: none; cursor: pointer;}
+li {list-style: none;}
+p { margin: 0px;}
+html, body { height: 100%; }
+
+body
+{
+    background-color: whitesmoke;
+}

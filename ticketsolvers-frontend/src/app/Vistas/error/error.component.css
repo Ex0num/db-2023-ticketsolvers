@@ -1,0 +1,136 @@
+#seccion-error
+{
+    height: 90%;
+    width: 100%;
+    padding-bottom: 12rem;
+    text-align: center;
+}
+
+#titulo-error-mobile
+{
+    display: none;
+    font-size: 52px;
+    color: white;
+    padding: 1rem;
+    font-family: Tittle-drawed2;
+    width: 100%;
+    margin-top: 13%;
+}
+
+#titulo-error
+{
+    font-size: 102px;
+    color: white;
+    font-family: Tittle-drawed2;
+    width: 100%;
+    margin-top: 13%;
+}
+
+#explicacion-error
+{
+    font-size: 28px;
+    color: white;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: Text-drawed;
+    font-weight: 600;
+}
+
+#btn-salir-del-error
+{
+    font-family: Text-drawed;
+    font-size: 22px;
+    margin-top: 2rem;
+    width: 20%;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 1rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0,212,255,0) 100%);
+}
+
+#btn-salir-del-error:hover
+{
+    background-color: black;
+    color: white;
+    opacity: 80%;
+    transition: background-color 1s ease-out, color 1s ease-out, opacity 1s;
+    animation: pulsate-fwd 5s ease-in-out infinite both;
+}
+
+
+@media (max-width: 778px) 
+{
+    #titulo-error
+    {
+        font-size: 60px;
+        margin-top: 23%;
+    }
+
+    #explicacion-error
+    {
+        font-size: 19px;
+    }
+
+    #btn-salir-del-error
+    {
+        font-size: 16px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) 
+{
+    #titulo-error-mobile
+    {
+        display: block;
+    }
+
+    #titulo-error
+    {
+        display: none;
+    }
+
+    #titulo-error
+    {
+        font-size: 32px;
+        margin-top: 23%;
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }

@@ -1,0 +1,27 @@
+*
+{
+    font-family: Tittle-drawed;
+}
+
+#formulario-ingreso
+{
+    text-align: center;
+}
+
+#formulario-ingreso-titulo
+{
+    font-family: Tittle-drawed2;
+    letter-spacing: 2px;
+}
+
+#formulario-ingreso-contenido
+{
+    font-weight: 700;
+}
+
+
+#formulario-ing-btn-enviar, #formulario-ing-btn-cancelar
+{
+    font-family: Tittle-drawed2;
+    margin-right: 1rem;
+}

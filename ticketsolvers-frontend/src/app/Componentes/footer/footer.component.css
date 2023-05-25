@@ -1,0 +1,79 @@
+#separador-footer
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+#contenedor-footer
+{
+    text-align: center;
+    background-color: black;
+    opacity: 100%;
+    color: white;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#footer
+{
+    padding: 1rem;
+}
+
+#nombre-empresa
+{
+    font-size: 12px;
+    font-family: Tittle-drawed2;
+    color: white;
+    opacity: 100%;
+}
+
+#simbolo-copyright, #nombre-empresa
+{
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@media (max-width: 778px) 
+{
+  #separador-footer
+  {
+    height: 1rem;
+  }
+
+  #nombre-empresa
+  {
+    font-size: 13px;
+  }
+}
+
+/*----------------- Animaciones ----------------------*/
+/* --- Animaciones de texto ---*/
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    opacity: 1;
+}
+}

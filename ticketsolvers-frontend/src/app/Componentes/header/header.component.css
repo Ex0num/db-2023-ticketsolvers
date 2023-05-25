@@ -1,0 +1,168 @@
+/*----------------- configuracion gral ----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tittle-drawed2;
+  font-weight: 600;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li
+{
+    list-style: none;
+}
+
+p
+{
+    margin: 0px;
+}
+
+/*--------------------------------------- Header --------------------------------------- */
+#contenedor-header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: rgb(0,0,0);
+    background: linear-gradient(170deg, rgba(0,0,0,0.8085609243697479) 11%, rgba(0,0,0,0.4332107843137255) 100%);
+    padding: 0.3rem;
+}
+
+#header-principal
+{
+    height: 3.5rem;
+    /* padding-bottom: 1rem; */
+}
+
+#titulo-y-logo
+{
+    margin-right: 5%;
+    margin-top: 2px;
+    font-family: Tittle-drawed2;
+}
+
+#icono-principal
+{
+  margin-right: 1rem;
+  border-radius: 100%;
+}
+
+#titulo-principal
+{
+    font-size: 32px;
+    margin-left: 0.5rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-family: Tittle-drawed2;
+    font-weight: 500;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* --- Asignacion de animaciones al renderizar elementos --- */
+#opcion-inicio, #opcion-registrarse, #opcion-ingresar, #opcion-contacto
+{
+    color: white;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    font-size: 22px;
+    margin-right: 2rem;
+    font-weight: 500;
+}
+
+#opcion-inicio:hover, #opcion-registrarse:hover, #opcion-ingresar:hover, #opcion-contacto:hover
+{
+    color: #5c5b5b;
+    transition: color 0.8s ease;
+}
+
+#separador-header
+{
+  height: 6.5rem;
+}
+
+/*----------------- Responsive mobile -----------------*/
+@media (max-width: 778px) 
+{
+  #header-lista-opciones
+  {
+    display: none;
+  }
+
+  #titulo-y-logo
+  {
+    margin-top: 5px;
+  }
+
+  #titulo-principal
+  {
+      font-size: 26px;
+  }
+
+  #separador-header
+  {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 350px) 
+{
+  #titulo-y-logo
+  {
+    margin-right: 20%;
+    /* margin-top: 5px; */
+  }
+
+  #titulo-principal
+  {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 250px) 
+{
+  #icono-principal
+  {
+    display: none;
+  }
+}
+
+/*----------------- Animaciones ----------------------*/
+/* --- Animaciones de texto ---*/
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    opacity: 1;
+}
+}

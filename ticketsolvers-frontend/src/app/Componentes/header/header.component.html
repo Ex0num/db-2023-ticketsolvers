@@ -1,0 +1,23 @@
+<div id="contenedor-header">
+    <header class="d-flex flex-wrap align-items-center justify-content-center" id="header-principal">
+        <!-- Titulo y logo -->
+        <a href="/home" id="titulo-y-logo">
+            
+            <a id="titulo-principal"><img id="icono-principal" width="50" height="50" src="../assets/ticket-icon.png">Ticketsolvers</a>
+        </a>
+
+        <!-- Menu hamburguesa -->
+        <app-hamburger-menu></app-hamburger-menu>    
+
+        <!-- Responsive options -->
+        <div>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="header-lista-opciones">
+                <li><a href="/home" class="nav-link px-2 link-dark" id="opcion-inicio">Inicio</a></li>
+                <li><a class="nav-link px-2 link-dark" id="opcion-ingresar" (click)="open_Ingresar_Dialog_header()">Ingreso</a></li>
+                <li><a class="nav-link px-2 link-dark" id="opcion-registrarse" (click)="open_Registrarse_Dialog_header()">Registro</a></li>
+                <li><a href="/contacto" class="nav-link px-2 link-dark" id="opcion-contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+</div>
+<div id="separador-header"></div>
