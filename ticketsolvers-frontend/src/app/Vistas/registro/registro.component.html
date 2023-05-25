@@ -1,1 +1,66 @@
-<p>registro works!</p>
+<div id="formulario-registro">
+    <h1 mat-dialog-title id="formulario-registro-titulo">Registrate a nuestros servicios</h1>
+    <div mat-dialog-content id="formulario-registro-contenido">
+        <div class="row" id="contenedor-campos">
+
+                <div class="col">
+                    <mat-form-field appearance="fill" id="opcion-nombre">
+                      <mat-label>Usuario</mat-label>
+                      <input matInput [(ngModel)]="nombre_ingresado">
+                    </mat-form-field>
+                </div>
+
+                <div class="row" id="opcion-nombre-y-apellido">
+                        <div class="col" id="opcion-nombre">
+                            <mat-form-field appearance="fill">
+                                <mat-label>Nombre</mat-label>
+                                <input matInput [(ngModel)]="nombre_ingresado">
+                            </mat-form-field>
+                        </div>
+                        <div class="col" id="opcion-apellido">
+                            <mat-form-field appearance="fill">
+                                <mat-label>Apellido</mat-label>
+                                <input matInput [(ngModel)]="nombre_ingresado">
+                            </mat-form-field>
+                        </div>
+                </div>
+
+                <div class="row" id="opcion-contraseña-y-confirmacion">
+                <div class="col">
+                    <mat-form-field appearance="fill" id="opcion-contraseña">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput type="password" [(ngModel)]="password_ingresada">
+                      </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field appearance="fill" id="opcion-confirmacion-contraseña">
+                        <mat-label>Confirme su contraseña</mat-label>
+                        <input matInput type="password" [(ngModel)]="password_ingresada">
+                      </mat-form-field>
+                </div>
+
+                <div class="row" id="opcion-sexo">
+                    <div class="col">
+                        <mat-form-field>
+                            <mat-label>Seleccione su sexo</mat-label>
+                            <mat-select [(value)]="selected">
+                              <mat-option>N/A</mat-option>
+                              <mat-option value="option1">Masculino</mat-option>
+                              <mat-option value="option2">Femenino</mat-option>
+                              <mat-option value="option3">Otro</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+
+                    <div class="col" id="opcion-politicas">
+                        <mat-checkbox id="checkbox-politicas"><label id="texto-politicas">Estoy de acuerdo con los <label id="terminos-y-condiciones">términos y condiciones</label> expuestos por Ticketsolvers &copy;</label></mat-checkbox>
+                    </div>
+
+                </div>
+          </div>
+          
+        </div>
+        <button mat-flat-button color="warn" id="formulario-reg-btn-cancelar" (click)="onNoClick()">Cancelar</button>
+        <button mat-flat-button color="primary" id="formulario-reg-btn-enviar" (click)="enviarIngreso()" cdkFocusInitial>Ingresar</button>
+    </div>
+</div>

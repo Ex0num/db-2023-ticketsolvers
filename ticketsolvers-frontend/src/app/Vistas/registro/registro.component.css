@@ -1,0 +1,64 @@
+*
+{
+    font-family: Tittle-drawed;
+}
+
+.row, .col
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+mat-form-field
+{
+    width: 95%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#formulario-registro
+{
+    text-align: center;
+}
+
+#formulario-registro-titulo
+{
+    font-family: Tittle-drawed2;
+    letter-spacing: 2px;
+}
+
+#formulario-registro-contenido
+{
+    font-weight: 700;
+}
+
+#opcion-nombre
+{
+    width: 97.5%;
+}
+
+#texto-politicas
+{
+    font-family: Text-drawed;
+    text-align: left;
+}
+
+#terminos-y-condiciones
+{
+    font-weight: 600;
+    font-family: Text-drawed;
+}
+
+#formulario-reg-btn-enviar, #formulario-reg-btn-cancelar
+{
+    font-family: Tittle-drawed2;
+    margin-right: 1rem;
+}
+
+@media (max-width: 650px) 
+{
+    #opcion-politicas
+    {
+        margin-bottom: 1rem;
+    }
+}

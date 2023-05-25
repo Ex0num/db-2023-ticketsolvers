@@ -1,0 +1,186 @@
+#seccion-contacto
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 85%;
+    overflow-y: auto;
+    width: 100%;
+    padding-bottom: 12rem;
+}
+
+#pregunta-contacto
+{
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    font-family: Text-drawed;
+    color: white;
+    font-weight: 500;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#seccion-explicacion-contacto
+{
+    animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    text-align: left;
+    font-weight: 500;
+    font-size: 19px;
+    font-family: Text-drawed;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+#parrafo-3-computer
+{
+    display: block;
+}
+
+#parrafo-3-mobile
+{
+    display: none;
+    text-align: left;
+    font-weight: 500;
+    font-size: 19px;
+    font-family: Text-drawed;
+    color: white;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+#seccion-expositor-googleMaps
+{
+    width: 80%;
+    height: 90%;
+    margin-left: 10%;
+    padding: 0.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    opacity: 70%;
+    background: rgb(141,90,182);
+    background: radial-gradient(circle, rgba(141,90,182,1) 0%, rgba(185,99,193,1) 55%, rgba(188,188,247,1) 96%);
+}
+
+#seccion-expositor-googleMaps:hover
+{
+    opacity: 90%;
+    transition: opacity 1s;
+}
+
+#iframe-gmaps
+{
+    width: 100%;
+    height: 100%;
+}
+
+#items-contacto
+{
+    padding-left: 2rem;
+}
+
+.icono-contacto
+{   
+    animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    margin-top: 0.5rem;
+    width: 40px;
+    height: 40px;
+}
+
+.texto-icono-contacto
+{
+    animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    margin-left: 1rem;
+    font-size: 19px;
+    font-family: Text-drawed;
+    color: white;
+}
+
+@media (max-width: 1025px) 
+{
+    #pregunta-contacto
+    {
+        font-size: 22px;
+    }
+
+    #seccion-explicacion-contacto
+    {
+        font-size: 14px;
+    }
+    
+    #seccion-expositor-googleMaps
+    {
+        margin-top: 0.8rem;
+        width: 95%;
+        margin: 0px;
+        margin-left: 2%;
+    }
+
+    #parrafo-3-computer
+    {
+        display: none;
+    }
+
+    #items-contacto
+    {      
+        margin-bottom: 4rem;
+    }
+    
+    .icono-contacto
+    {   
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+@media (max-width: 520px) 
+{
+    #seccion-explicacion-contacto
+    {
+        padding-left: 0.5rem;
+    }
+
+    #items-contacto
+    {
+        padding-left: 0.5rem;
+    }
+
+    .texto-icono-contacto
+    {
+        font-size: 14px;
+    }
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }

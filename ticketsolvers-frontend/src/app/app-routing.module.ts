@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './Vistas/home/home.component';
 import { ErrorComponent } from './Vistas/error/error.component';
+import { ContactoComponent } from './Vistas/contacto/contacto.component';
+import { InicioComponent } from './Vistas/inicio/inicio.component';
 
 const routes: Routes = [
-  {path:'home',component:HomeComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path:'contacto',component:ContactoComponent},
+  {path:'inicio',component:InicioComponent},
+  {path: '', redirectTo: 'inicio', pathMatch: 'full'},
   {path: '**',component:ErrorComponent}
 ];
 

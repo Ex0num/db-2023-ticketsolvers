@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './Vistas/home/home.component';
 import { HeaderComponent } from './Componentes/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -18,17 +17,22 @@ import { HamburgerMenuComponent } from './Componentes/hamburger-menu/hamburger-m
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorComponent } from './Vistas/error/error.component';
+import { MatSelectModule } from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { ContactoComponent } from './Vistas/contacto/contacto.component';
+import { InicioComponent } from './Vistas/inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     HeaderComponent,
     LoginComponent,
     RegistroComponent,
     HamburgerMenuComponent,
     FooterComponent,
-    ErrorComponent
+    ErrorComponent,
+    ContactoComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { ErrorComponent } from './Vistas/error/error.component';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

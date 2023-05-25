@@ -7,7 +7,7 @@
     font-weight: 500;
   }
   
-  #contenedor-menu-hamburguesa 
+  #contenedor-menu-hamburguesa,  #listado-menu-hamburguesa
   { 
     display: none;
   }
@@ -23,6 +23,7 @@
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     box-shadow: 0 0 0 0 black, 0 0 0 0 black;
+    opacity: 93%;
     cursor: pointer;
   }
   
@@ -106,9 +107,9 @@
     font-size: 24px;
   }
   
-  @media (max-width: 777px) 
+  @media (max-width: 814px) 
   {
-    #contenedor-menu-hamburguesa
+    #contenedor-menu-hamburguesa, #listado-menu-hamburguesa
     {
       display: block;
     }

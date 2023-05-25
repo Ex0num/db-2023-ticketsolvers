@@ -17,7 +17,6 @@ export class LoginComponent
   // Cierre del formulario
   onNoClick(): void { this.dialogIngreso.close(); }
 
-  
   enviarIngreso()
   {
     console.log('Usuario:', this.nombre_ingresado);

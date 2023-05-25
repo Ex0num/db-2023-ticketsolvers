@@ -10,6 +10,8 @@ import { RegistroComponent } from 'src/app/Vistas/registro/registro.component';
 })
 export class HamburgerMenuComponent {
 
+  opcionesClickeables = false;
+
   constructor(public dialog: MatDialog){}
 
   open_Ingresar_Dialog_hamburguesa(): void 
@@ -20,5 +22,29 @@ export class HamburgerMenuComponent {
   open_Registrarse_Dialog_hamburguesa(): void 
   {
     let dialogRef = this.dialog.open(RegistroComponent, {data: {},});
+  }
+
+  switchearActivacionOpciones(): void
+  {
+    let opciones = document.querySelectorAll(".opcion-menu-hamburguesa");
+    this.opcionesClickeables = !this.opcionesClickeables;
+    
+    if (this.opcionesClickeables == false) 
+    {
+      setTimeout(() =>
+      {
+        opciones.forEach((opcion:any, index)=> 
+        {
+          opcion.setAttribute("hidden","true");
+        });
+      }, 500);
+    }
+    else 
+    {
+      opciones.forEach((opcion:any, index)=> 
+      {
+        opcion.removeAttribute("hidden");
+      });
+    }
   }
 }

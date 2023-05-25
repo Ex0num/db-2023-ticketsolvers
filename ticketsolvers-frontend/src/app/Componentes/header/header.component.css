@@ -1,6 +1,4 @@
 /*----------------- configuracion gral ----------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +29,7 @@ p
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     background: rgb(0,0,0);
     background: linear-gradient(170deg, rgba(0,0,0,0.8085609243697479) 11%, rgba(0,0,0,0.4332107843137255) 100%);
     padding: 0.3rem;
@@ -65,20 +63,20 @@ p
     color: white;
     font-family: Tittle-drawed2;
     font-weight: 500;
-    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 /* --- Asignacion de animaciones al renderizar elementos --- */
-#opcion-inicio, #opcion-registrarse, #opcion-ingresar, #opcion-contacto
+#opcion-inicio, #opcion-registrarse, #opcion-ingresar, #opcion-contacto, #opcion-FAQ
 {
     color: white;
-    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     font-size: 22px;
     margin-right: 2rem;
     font-weight: 500;
 }
 
-#opcion-inicio:hover, #opcion-registrarse:hover, #opcion-ingresar:hover, #opcion-contacto:hover
+#opcion-inicio:hover, #opcion-registrarse:hover, #opcion-ingresar:hover, #opcion-contacto:hover, #opcion-FAQ:hover
 {
     color: #5c5b5b;
     transition: color 0.8s ease;
@@ -90,7 +88,7 @@ p
 }
 
 /*----------------- Responsive mobile -----------------*/
-@media (max-width: 778px) 
+@media (max-width: 815px) 
 {
   #header-lista-opciones
   {
