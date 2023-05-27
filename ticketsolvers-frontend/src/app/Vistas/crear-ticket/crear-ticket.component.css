@@ -1,0 +1,32 @@
+*
+{
+    font-family: Tittle-drawed;
+}
+
+#formulario-crear-ticket
+{
+    text-align: center;
+}
+
+#formulario-crear-ticket-titulo
+{
+    font-family: Tittle-drawed2;
+    letter-spacing: 2px;
+}
+
+#formulario-crear-ticket-contenido
+{
+    font-weight: 700;
+}
+
+#textarea-crear-ticket-comentario
+{
+    min-height: 4rem;
+    max-height: 8rem;
+}
+
+#formulario-crear-ticket-btn-enviar, #formulario-crear-ticket-btn-cancelar
+{
+    font-family: Tittle-drawed2;
+    margin-right: 1rem;
+}

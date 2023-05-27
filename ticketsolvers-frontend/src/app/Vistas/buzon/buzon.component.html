@@ -1,0 +1,77 @@
+<section id="seccion-buzon">
+
+    <mat-card id="contenedor-tabla-tickets">
+        <label id="titulo-tabla-tickets">Mis tickets de asistencia </label>
+        <button id="boton-menu-tabla-tickets" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <img src="../../../assets/icons/opciones-tabla/buzon-inicial.png" class="opcion-tabla">
+            <span class="opcion-txt-tabla">Bandeja de entrada</span>
+            </button>
+        <button mat-menu-item>
+            <img src="../../../assets/icons/opciones-tabla/alta-ticket.png" class="opcion-tabla">
+            <span class="opcion-txt-tabla" (click)="open_CrearTicket_Dialog_buzon()">Crear ticket</span>
+        </button>
+        <button mat-menu-item>
+            <img src="../../../assets/icons/opciones-tabla/perfil.png" class="opcion-tabla">
+            <span class="opcion-txt-tabla" (click)="open_MostrarDatosPersonales_Dialog_buzon()">Mis datos</span>
+        </button>
+        <button mat-menu-item>
+            <img src="../../../assets/icons/opciones-tabla/cerrar-sesion.png" class="opcion-tabla">
+            <span class="opcion-txt-tabla">Cerrar sesión</span>
+        </button>
+        </mat-menu>
+
+        <div class="row" id="contenedor-tabla">
+            <mat-form-field id="filtrar-tickets-por-asunto">
+                <mat-label class="label-filtrador-tabla">Buscar tickets por asunto</mat-label>
+                <input class="txt-drawed" matInput type="text">
+            </mat-form-field>
+    
+            <mat-form-field id="filtrar-tickets-por-estado">
+                <mat-label class="label-filtrador-tabla">Filtrar por estado</mat-label>
+                <mat-select class="input-filtrar-ticket-tabla" [(value)]="selected">
+                  <mat-option class="txt-drawed">Cualquiera</mat-option>
+                  <mat-option class="txt-drawed" value="option1">Abierto</mat-option>
+                  <mat-option class="txt-drawed" value="option2">Esperando su respuesta</mat-option>
+                  <mat-option class="txt-drawed" value="option3">Resuelto</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+       
+        
+        <table mat-table class="mat-elevation-z8" id="tabla-tickets-buzon">
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef class="txt-columna-tabla-tickets-buzon">Asunto</th>
+              <td mat-cell *matCellDef="let element">Dar de baja</td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="weight">
+              <th mat-header-cell *matHeaderCellDef class="txt-columna-tabla-tickets-buzon">Fecha de creación</th>
+              <td mat-cell *matCellDef="let element">11/02/2022</td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="estado">
+                <th mat-header-cell *matHeaderCellDef class="txt-columna-tabla-tickets-buzon">Estado</th>
+                <td mat-cell *matCellDef="let element">Abierto</td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="symbol">
+              <th mat-header-cell *matHeaderCellDef class="txt-columna-tabla-tickets-buzon">Comentarios</th>
+              <td mat-cell *matCellDef="let element">Necesito esto con urgencia</td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+
+    </mat-card>
+
+</section>

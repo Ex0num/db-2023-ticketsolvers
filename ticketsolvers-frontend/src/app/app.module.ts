@@ -21,6 +21,13 @@ import { MatSelectModule } from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ContactoComponent } from './Vistas/contacto/contacto.component';
 import { InicioComponent } from './Vistas/inicio/inicio.component';
+import { FaqComponent } from './Vistas/faq/faq.component';
+import { BuzonComponent } from './Vistas/buzon/buzon.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatTableModule} from '@angular/material/table';
+import { CrearTicketComponent } from './Vistas/crear-ticket/crear-ticket.component';
+import { MisDatosComponent } from './Vistas/mis-datos/mis-datos.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +39,11 @@ import { InicioComponent } from './Vistas/inicio/inicio.component';
     FooterComponent,
     ErrorComponent,
     ContactoComponent,
-    InicioComponent
+    InicioComponent,
+    FaqComponent,
+    BuzonComponent,
+    CrearTicketComponent,
+    MisDatosComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +57,10 @@ import { InicioComponent } from './Vistas/inicio/inicio.component';
     MatFormFieldModule,
     MatCardModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatMenuModule,
+    MatIconModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

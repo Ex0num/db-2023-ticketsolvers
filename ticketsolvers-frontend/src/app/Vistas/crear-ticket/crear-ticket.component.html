@@ -1,0 +1,32 @@
+<div id="formulario-crear-ticket">
+
+    <h1 mat-dialog-title id="formulario-crear-ticket-titulo">Crear ticket</h1>
+    <div mat-dialog-content id="formulario-crear-ticket-contenido">
+
+        <div class="row">
+              <div class="row">
+                    <mat-form-field>
+                        <mat-label>Seleccione el asunto</mat-label>
+                        <mat-select [(value)]="asunto_selecccionado">
+                        <mat-option>N/A</mat-option>
+                        <mat-option value="option1">Desperfecto</mat-option>
+                        <mat-option value="option2">Cambio de plan</mat-option>
+                        <mat-option value="option3">Dar de alta</mat-option>
+                        <mat-option value="option3">Dar de alta</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+              </div>
+
+              <div class="row">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Realice un comentario</mat-label>
+                        <textarea id="textarea-crear-ticket-comentario" matInput placeholder="Ej: Realizo este pedido debido a que..."></textarea>
+                    </mat-form-field>
+              </div>
+        </div>
+
+        <button mat-flat-button color="warn" id="formulario-crear-ticket-btn-cancelar" (click)="onNoClick()">Cancelar</button>
+        <button mat-flat-button color="primary" id="formulario-crear-ticket-btn-enviar" (click)="enviarCreacionTicket()" cdkFocusInitial>Enviar</button>
+    </div>
+    
+</div>
