@@ -1,0 +1,28 @@
+#expositor-cerrar-sesion
+{
+    text-align: center;
+}
+
+#cerrar-sesion-titulo
+{
+    font-family: Tittle-drawed2;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+
+#explicacion-cerrar-sesion
+{
+    font-family: Text-drawed;
+    width: 100%;
+}
+
+#contenedor-btns-cerrar-sesion
+{
+    font-family: Text-drawed2;
+}
+
+#expositor-cerrar-sesion-btn-cancelar, #expositor-cerrar-sesion-btn-enviar
+{
+    font-family: Tittle-drawed2;
+    margin-right: 1rem;
+}

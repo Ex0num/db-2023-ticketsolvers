@@ -1,0 +1,10 @@
+#pregunta-faq
+{
+    animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    font-family: Text-drawed;
+    color: white;
+    font-weight: 500;
+    font-size: 27px;
+    margin-bottom: 4rem;
+    font-weight: 600;
+}

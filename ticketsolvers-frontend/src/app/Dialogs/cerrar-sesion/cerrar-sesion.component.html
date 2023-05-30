@@ -1,0 +1,16 @@
+<div id="expositor-cerrar-sesion">
+
+    <h1 mat-dialog-title id="cerrar-sesion-titulo">Cerrar sesión</h1>
+    <div mat-dialog-content id="cerrar-sesion-contenido">
+        <div class="row mx-0">
+              <div class="row mx-0">
+                    <p id="explicacion-cerrar-sesion">Se cerrará la sesión actual.</p>
+              </div>
+        </div>
+        <div id="contenedor-btns-cerrar-sesion">
+            <button mat-flat-button color="warn" id="expositor-cerrar-sesion-btn-cancelar" (click)="onNoClick()">Cancelar</button>
+            <button mat-flat-button color="primary" id="expositor-cerrar-sesion-btn-enviar" (click)="enviarIngreso()" cdkFocusInitial>Salir</button>
+        </div>
+    </div>
+    
+</div>

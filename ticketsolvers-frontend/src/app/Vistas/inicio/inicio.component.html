@@ -15,7 +15,16 @@
             <button id="btn-vermas">Ver más</button>
         </div>
     </div>
+    <button mat-mini-fab color="accent" id="acceso-directo-soporte-cliente" hidden>
+        <img src="../../../assets/icons/acceso-directo/soporte-cliente.png" height="25px" width="25px">
+     </button>
+     <button mat-mini-fab color="accent" id="acceso-directo-soporte-tecnico" hidden>
+        <img src="../../../assets/icons/acceso-directo/soporte-tecnico.png" height="25px" width="25px">
+     </button>
+     <button mat-mini-fab color="accent" id="acceso-directo-soporte-financiero" hidden>
+        <img src="../../../assets/icons/acceso-directo/soporte-financiero.png" height="25px" width="25px">
+     </button>
     <button mat-mini-fab color="accent" id="acceso-directo">
-       <img src="../../../assets/icons/acceso-directo.png" height="25px" width="25px">
-      </button>
+       <img src="../../../assets/icons/acceso-directo/acceso-directo.png" height="25px" width="25px" (click)="switchearAccesoDirecto()">
+    </button>
 </section>

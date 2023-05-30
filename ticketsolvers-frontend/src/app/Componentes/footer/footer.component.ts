@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { LoginComponent } from 'src/app/Vistas/login/login.component';
-import { RegistroComponent } from 'src/app/Vistas/registro/registro.component';
+import { LoginComponent } from '../../Dialogs/login/login.component';
+import { RegistroComponent } from '../../Dialogs/registro/registro.component';
 
 @Component({
   selector: 'app-footer',

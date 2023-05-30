@@ -1,23 +1,25 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { LoginComponent } from '../login/login.component';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-mis-datos',
-  templateUrl: './mis-datos.component.html',
-  styleUrls: ['./mis-datos.component.css']
+  selector: 'app-registro',
+  templateUrl: './registro.component.html',
+  styleUrls: ['./registro.component.css']
 })
-export class MisDatosComponent 
+export class RegistroComponent 
 {
-  constructor(public dialogIngreso: MatDialogRef<LoginComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
+
+  constructor(public dialogRegistro: MatDialogRef<RegistroComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   // Datos ingresados
   nombre_ingresado:any;
   password_ingresada:any;
 
-  // Cierre del formulario
-  onNoClick(): void { this.dialogIngreso.close(); }
+  selected = "";
 
+  // Cierre del formulario
+  onNoClick(): void { this.dialogRegistro.close(); }
+  
   enviarIngreso()
   {
     console.log('Usuario:', this.nombre_ingresado);
@@ -33,5 +35,6 @@ export class MisDatosComponent
     // Aquí puedes realizar la consulta al servidor enviando los datos correspondientes
     // ...
   }
+
 
 }

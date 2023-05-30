@@ -1,24 +1,25 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-crear-ticket',
-  templateUrl: './crear-ticket.component.html',
-  styleUrls: ['./crear-ticket.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class CrearTicketComponent {
-
-  constructor(public dialogIngreso: MatDialogRef<CrearTicketComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
+export class LoginComponent {
+  constructor(public dialogLogin: MatDialogRef<LoginComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   // Datos ingresados
   nombre_ingresado:any;
+  password_ingresada:any;
 
   // Cierre del formulario
-  onNoClick(): void {this.dialogIngreso.close();}
+  onNoClick(): void { this.dialogLogin.close(); }
 
-  enviarCreacionTicket()
+  enviarIngreso()
   {
     console.log('Usuario:', this.nombre_ingresado);
+    console.log('Contraseña:', this.password_ingresada);
   
       //Si sale todo bien
       //Swal.fire('¡Bienvenido/a!','¿Como has estado?','success');
@@ -31,5 +32,4 @@ export class CrearTicketComponent {
     // ...
   }
 
-  asunto_selecccionado:any;
 }

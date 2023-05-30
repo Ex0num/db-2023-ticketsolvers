@@ -134,6 +134,15 @@
     }
 }
 
+@media (max-width: 750px) 
+{
+    #seccion-expositor-googleMaps
+    {
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+}
+
 
 @media (max-width: 520px) 
 {

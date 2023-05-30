@@ -12,4 +12,28 @@ export class InicioComponent {
     let titulo:any = document.getElementById("titulo-superior");
     titulo.textContent = "Ticketsolvers | Inicio";
   }
+
+
+  mostrarAccesosDirectos = false;
+  switchearAccesoDirecto():void
+  {
+    let fabSoporteCliente = document.getElementById("acceso-directo-soporte-cliente");
+    let fabSoporteTecnico = document.getElementById("acceso-directo-soporte-tecnico");;
+    let fabSoporteFinanciero = document.getElementById("acceso-directo-soporte-financiero");;
+
+    this.mostrarAccesosDirectos = !this.mostrarAccesosDirectos;
+
+    if (this.mostrarAccesosDirectos == true)
+    {
+      fabSoporteCliente?.removeAttribute("hidden");
+      fabSoporteTecnico?.removeAttribute("hidden");
+      fabSoporteFinanciero?.removeAttribute("hidden");
+    }
+    else
+    {
+      fabSoporteCliente?.setAttribute("hidden","true");
+      fabSoporteTecnico?.setAttribute("hidden","true");
+      fabSoporteFinanciero?.setAttribute("hidden","true");
+    }
+  }
 }

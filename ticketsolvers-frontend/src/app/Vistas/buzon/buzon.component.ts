@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CrearTicketComponent } from '../crear-ticket/crear-ticket.component';
-import { MisDatosComponent } from '../mis-datos/mis-datos.component';
+import { CrearTicketComponent } from '../../Dialogs/crear-ticket/crear-ticket.component';
+import { MisDatosComponent } from '../../Dialogs/mis-datos/mis-datos.component';
+import { CerrarSesionComponent } from 'src/app/Dialogs/cerrar-sesion/cerrar-sesion.component';
 
 export interface PeriodicElement {
     name: string;
@@ -87,6 +88,11 @@ export class BuzonComponent {
 
     cerrarSesion_Dialog_buzon():void
     {
+        const dialogIngresarRef = this.dialog.open(CerrarSesionComponent, {data: {},});
+        dialogIngresarRef.afterClosed().subscribe(result => 
+        {
+            console.log('The dialog was closed');
+        });
         //Si sale todo bien
         // Swal.fire('Cerrar sesión','¡Se cerrará la sesión, muchas gracias por visitarnos!','success');
         

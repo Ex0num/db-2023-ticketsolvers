@@ -2,27 +2,24 @@ import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-registro',
-  templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
+  selector: 'app-crear-ticket',
+  templateUrl: './crear-ticket.component.html',
+  styleUrls: ['./crear-ticket.component.css']
 })
-export class RegistroComponent {
+export class CrearTicketComponent 
+{
 
-  constructor(public dialogIngreso: MatDialogRef<RegistroComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
+  constructor(public dialogCrearTicket: MatDialogRef<CrearTicketComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   // Datos ingresados
   nombre_ingresado:any;
-  password_ingresada:any;
-
-  selected = "";
 
   // Cierre del formulario
-  onNoClick(): void { this.dialogIngreso.close(); }
-  
-  enviarIngreso()
+  onNoClick(): void {this.dialogCrearTicket.close();}
+
+  enviarCreacionTicket()
   {
     console.log('Usuario:', this.nombre_ingresado);
-    console.log('Contraseña:', this.password_ingresada);
   
       //Si sale todo bien
       //Swal.fire('¡Bienvenido/a!','¿Como has estado?','success');
@@ -35,5 +32,5 @@ export class RegistroComponent {
     // ...
   }
 
-
+  asunto_selecccionado:any;
 }

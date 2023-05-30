@@ -66,11 +66,50 @@
     animation: pulsate-fwd 5s ease-in-out infinite both;
 }
 
-#acceso-directo
+#acceso-directo, #acceso-directo-soporte-cliente, #acceso-directo-soporte-tecnico, #acceso-directo-soporte-financiero
 {
   position: absolute;
   left: 10px;
-  bottom: 60px;
+  bottom: 70px;
+  z-index: 10000;
+}
+
+#acceso-directo-soporte-cliente
+{
+  bottom: 120px;
+}
+
+#acceso-directo-soporte-tecnico
+{
+  bottom: 170px;
+}
+
+#acceso-directo-soporte-financiero
+{
+  bottom: 220px;
+}
+
+@media (min-width: 1600px)
+{
+  #acceso-directo
+  {
+    bottom: 80px;
+  }
+
+  #acceso-directo-soporte-cliente
+  {
+    bottom: 130px;
+  }
+
+  #acceso-directo-soporte-tecnico
+  {
+    bottom: 180px;
+  }
+
+  #acceso-directo-soporte-financiero
+  {
+    bottom: 230px;
+  }
 }
 
 @media (max-width: 778px) 

@@ -4,8 +4,10 @@ import { ErrorComponent } from './Vistas/error/error.component';
 import { ContactoComponent } from './Vistas/contacto/contacto.component';
 import { InicioComponent } from './Vistas/inicio/inicio.component';
 import { BuzonComponent } from './Vistas/buzon/buzon.component';
+import { FaqComponent } from './Vistas/faq/faq.component';
 
 const routes: Routes = [
+  {path:'FAQ',component:FaqComponent},
   {path:'buzon',component:BuzonComponent},
   {path:'contacto',component:ContactoComponent},
   {path:'inicio',component:InicioComponent},

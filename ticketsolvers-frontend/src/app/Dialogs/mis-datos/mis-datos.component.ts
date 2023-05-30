@@ -1,21 +1,22 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-mis-datos',
+  templateUrl: './mis-datos.component.html',
+  styleUrls: ['./mis-datos.component.css']
 })
-export class LoginComponent 
+export class MisDatosComponent 
 {
-  constructor(public dialogIngreso: MatDialogRef<LoginComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
+  constructor(public dialogMisDatos: MatDialogRef<MisDatosComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   // Datos ingresados
   nombre_ingresado:any;
   password_ingresada:any;
 
   // Cierre del formulario
-  onNoClick(): void { this.dialogIngreso.close(); }
+  onNoClick(): void { this.dialogMisDatos.close(); }
 
   enviarIngreso()
   {
