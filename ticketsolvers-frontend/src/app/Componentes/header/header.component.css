@@ -67,19 +67,28 @@ p
 }
 
 /* --- Asignacion de animaciones al renderizar elementos --- */
-#opcion-inicio, #opcion-registrarse, #opcion-ingresar, #opcion-contacto, #opcion-FAQ
+#opcion-inicio, 
+#opcion-registrarse, 
+#opcion-ingresar,
+#opcion-contacto, 
+#opcion-FAQ
 {
     color: white;
     animation: tracking-in-expand 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     font-size: 22px;
     margin-right: 2rem;
     font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+  transition: color 0.8s ease, border-bottom 0.8s ease;
 }
 
-#opcion-inicio:hover, #opcion-registrarse:hover, #opcion-ingresar:hover, #opcion-contacto:hover, #opcion-FAQ:hover
-{
-    color: #5c5b5b;
-    transition: color 0.8s ease;
+#opcion-inicio:hover,
+#opcion-registrarse:hover,
+#opcion-ingresar:hover,
+#opcion-contacto:hover,
+#opcion-FAQ:hover {
+  border-bottom: 1px solid white;
 }
 
 #separador-header

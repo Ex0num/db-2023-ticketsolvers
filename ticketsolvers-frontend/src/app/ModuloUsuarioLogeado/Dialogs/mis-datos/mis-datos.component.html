@@ -1,0 +1,40 @@
+<div id="formulario-ingreso">
+
+  <h1 mat-dialog-title id="formulario-ingreso-titulo">Tus datos</h1>
+  <div mat-dialog-content id="formulario-ingreso-contenido">
+      <div class="row">
+            <div class="row">
+              <mat-form-field appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <input matInput [(ngModel)]="nombre_ingresado" readonly>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input matInput [(ngModel)]="nombre_ingresado" readonly>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field appearance="fill">
+                <mat-label>Apellido</mat-label>
+                <input matInput [(ngModel)]="nombre_ingresado" readonly>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field appearance="fill">
+                <mat-label>Sexo</mat-label>
+                <input matInput [(ngModel)]="nombre_ingresado" readonly>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field appearance="fill">
+                <mat-label>Fecha de registro</mat-label>
+                <input matInput [(ngModel)]="nombre_ingresado" readonly>
+              </mat-form-field>
+            </div>
+      </div>
+      <button mat-flat-button color="warn" id="formulario-ing-btn-cancelar" (click)="onNoClick()">Volver</button>
+  </div>
+  
+</div>

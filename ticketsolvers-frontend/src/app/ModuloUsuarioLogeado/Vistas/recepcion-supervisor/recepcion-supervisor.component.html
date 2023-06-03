@@ -1,0 +1,287 @@
+<section id="seccion-buzon">
+
+    <mat-card id="contenedor-tabla-tickets">
+        <label id="titulo-tabla-tickets">Tickets a ser asignados</label>
+        <button id="boton-menu-tabla-tickets" mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="open_MostrarDatosPersonales_Dialog_buzon()">
+                <img src="../../../assets/icons/opciones-tabla/perfil.png" class="opcion-tabla">
+                <span class="opcion-txt-tabla">Mis datos</span>
+            </button>
+            <button mat-menu-item (click)="cerrarSesion_Dialog_buzon()">
+                <img src="../../../assets/icons/opciones-tabla/cerrar-sesion.png" class="opcion-tabla">
+                <span class="opcion-txt-tabla" >Cerrar sesión</span>
+            </button>
+        </mat-menu>
+
+        <div class="row mx-0" id="contenedor-tabla">
+        
+            <div class="col-md-9 d-flex flex-column" id="columna-tickets-abiertos">
+                <label id="titulo-columna-tickets">Tickets</label>
+                
+                <mat-card class="item-ticket">
+                    <div class="col mx-0">
+                        <p class="titulo-ticket">
+                            <label class="valor-titulo-ticket">Necesito que me den bola urgentemente y hacer algo al respecto...</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="cliente-ticket">
+                            Cliente -  <label class="valor-cliente-ticket">Juan Perez</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="asunto-ticket">
+                            Asunto -  <label class="valor-asunto-ticket">Dar de baja</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="actualizacion-ticket">
+                            Últ. actualización - <label class="valor-actualizacion-ticket">10/05/2023</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="estado-ticket">
+                            Estado - <label class="valor-estado-ticket">Resuelto</label>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col mx-0">
+                            <p class="codigo-ticket">
+                                Código - <label class="valor-codigo-ticket">01</label>
+                            </p>
+                        </div>
+                        <div class="col-md-9 mx-0 columna-banear-ticket">
+                            <button class="btn-banear-ticket" mat-flat-button color="warn">
+                                <img class="img-banear-ticket" src="../../../../assets/icons/opciones-tabla/ban.png" alt="icono_de_banear">
+                            </button>
+                            <button class="btn-asignar-ticket" mat-flat-button color="primary">
+                                <img class="img-asignar-ticket" src="../../../../assets/icons/opciones-tabla/asignar.png" alt="icono_de_asignar">
+                            </button>
+                        </div>
+                    </div>
+                </mat-card>
+
+                <mat-card class="item-ticket">
+                    <div class="col mx-0">
+                        <p class="titulo-ticket">
+                            <label class="valor-titulo-ticket">¡AYUDA POR FAVOR!</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="cliente-ticket">
+                            Cliente -  <label class="valor-cliente-ticket">Ricardo Juarez</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="asunto-ticket">
+                            Asunto -  <label class="valor-asunto-ticket">Desperfecto</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="actualizacion-ticket">
+                            Últ. actualización - <label class="valor-actualizacion-ticket">01/06/2023</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="estado-ticket">
+                            Estado - <label class="valor-estado-ticket">Abierto</label>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col mx-0">
+                            <p class="codigo-ticket">
+                                Código - <label class="valor-codigo-ticket">02</label>
+                            </p>
+                        </div>
+                        <div class="col-md-9 mx-0 columna-banear-ticket">
+                            <button class="btn-banear-ticket" mat-flat-button color="warn">
+                                <img class="img-banear-ticket" src="../../../../assets/icons/opciones-tabla/ban.png" alt="icono_de_banear">
+                            </button>
+                            <button class="btn-asignar-ticket" mat-flat-button color="primary">
+                                <img class="img-asignar-ticket" src="../../../../assets/icons/opciones-tabla/asignar.png" alt="icono_de_asignar">
+                            </button>
+                        </div>
+                    </div>
+                </mat-card>
+
+                <mat-card class="item-ticket">
+                    <div class="col mx-0">
+                        <p class="titulo-ticket">
+                            <label class="valor-titulo-ticket">no quiero más este plan.</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="cliente-ticket">
+                            Cliente -  <label class="valor-cliente-ticket">Ernesto Guillermo Ramirez</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="asunto-ticket">
+                            Asunto -  <label class="valor-asunto-ticket">Cambio de plan</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="actualizacion-ticket">
+                            Últ. actualización - <label class="valor-actualizacion-ticket">30/05/2023</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="estado-ticket">
+                            Estado - <label class="valor-estado-ticket">Abierto</label>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col mx-0">
+                            <p class="codigo-ticket">
+                                Código - <label class="valor-codigo-ticket">03</label>
+                            </p>
+                        </div>
+                        <div class="col-md-9 mx-0 columna-banear-ticket">
+                            <button class="btn-banear-ticket" mat-flat-button color="warn">
+                                <img class="img-banear-ticket" src="../../../../assets/icons/opciones-tabla/ban.png" alt="icono_de_banear">
+                            </button>
+                            <button class="btn-asignar-ticket" mat-flat-button color="primary">
+                                <img class="img-asignar-ticket" src="../../../../assets/icons/opciones-tabla/asignar.png" alt="icono_de_asignar">
+                            </button>
+                        </div>
+                    </div>
+                </mat-card>
+    
+            </div>
+            <div class="col-md-3 d-flex flex-column" id="columna-agentes-disponibles">
+                <label id="titulo-columna-agentes">Agentes</label>
+                
+                <mat-card class="item-agente">
+                    <div class="row">
+                        <div class="col mx-0">
+                            <p class="nombre-agente">
+                                <label class="valor-nombre-agente">Gabriel Lopez Gasal</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="asunto-ticket">
+                            Área -  <label class="valor-asunto-ticket">Soporte técnico</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="actualizacion-ticket">
+                            Últ. ingreso - <label class="valor-actualizacion-ticket">02/06/2023</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="estado-ticket">
+                            Estado - <label class="valor-estado-ticket">Disponible</label>
+                        </p>
+                    </div>
+
+                    <div class="col mx-0">
+                        <p class="cantidad-tickets-resueltos">
+                            Tickets resueltos - <label class="valor-cantidad-tickets-resueltos">2112</label>
+                        </p>
+                    </div>
+
+                    <div class="col mx-0">
+                        <p class="cantidad-tickets-derivados">
+                            Derivaciones - <label class="valor-cantidad-tickets-derivados">7</label>
+                        </p>
+                    </div>
+                </mat-card>
+
+                <mat-card class="item-agente">
+                    <div class="row">
+                        <div class="col mx-0">
+                            <p class="nombre-agente">
+                                <label class="valor-nombre-agente">Martina Calpur</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="asunto-ticket">
+                            Área -  <label class="valor-asunto-ticket">Soporte cliente</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="actualizacion-ticket">
+                            Últ. ingreso - <label class="valor-actualizacion-ticket">01/06/2023</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="estado-ticket">
+                            Estado - <label class="valor-estado-ticket">Disponible</label>
+                        </p>
+                    </div>
+
+                    <div class="col mx-0">
+                        <p class="cantidad-tickets-resueltos">
+                            Tickets resueltos - <label class="valor-cantidad-tickets-resueltos">132</label>
+                        </p>
+                    </div>
+
+                    <div class="col mx-0">
+                        <p class="cantidad-tickets-derivados">
+                            Derivaciones - <label class="valor-cantidad-tickets-derivados">34</label>
+                        </p>
+                    </div>
+                </mat-card>
+
+                <mat-card class="item-agente">
+                    <div class="row">
+                        <div class="col mx-0">
+                            <p class="nombre-agente">
+                                <label class="valor-nombre-agente">Octavio Villegas</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="asunto-ticket">
+                            Área -  <label class="valor-asunto-ticket">Soporte financiero</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="actualizacion-ticket">
+                            Últ. ingreso - <label class="valor-actualizacion-ticket">29/05/2023</label>
+                        </p>
+                    </div>
+                    <div class="col mx-0">
+                        <p class="estado-ticket">
+                            Estado - <label class="valor-estado-ticket">Disponible</label>
+                        </p>
+                    </div>
+
+                    <div class="col mx-0">
+                        <p class="cantidad-tickets-resueltos">
+                            Tickets resueltos - <label class="valor-cantidad-tickets-resueltos">27</label>
+                        </p>
+                    </div>
+
+                    <div class="col mx-0">
+                        <p class="cantidad-tickets-derivados">
+                            Derivaciones - <label class="valor-cantidad-tickets-derivados">2</label>
+                        </p>
+                    </div>
+                </mat-card>
+
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div id="contenedor-mensaje-asignar-ticket">
+                <label id="mensaje-asignar-ticket">
+                    Selección <br> <br>
+                    Numero ticket: <strong>"01"</strong> <br> <br>
+                    Nombre agente: <strong>"Gabriel Lopez Gasal"</strong>
+                </label> 
+            </div>
+            <div style="text-align: center;">
+                <button class="btn-asignar-ticket" mat-flat-button color="warn" id="formulario-ing-btn-cancelar">Borrar selección</button>
+                <button class="btn-asignar-ticket" mat-flat-button color="primary" id="formulario-ing-btn-enviar" cdkFocusInitial>Asignar</button>
+            </div>
+        </div> -->
+
+    </mat-card>
+
+</section>

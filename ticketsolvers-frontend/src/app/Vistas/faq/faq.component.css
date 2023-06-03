@@ -1,10 +1,202 @@
-#pregunta-faq
-{
-    animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #bebebe;
+}
+
+#seccion-faq {
+    height: 75%;
+    width: 100%;
+    padding-left: 4%;
+}
+
+#contenedor-faq {
+    margin-top: 6%;
+    max-height: 100%;
+    overflow-y: auto;
+    border-radius: 6px;
+}
+
+#h1-titulo-faq {
+    text-align: lef;
     font-family: Text-drawed;
-    color: white;
-    font-weight: 500;
-    font-size: 27px;
-    margin-bottom: 4rem;
     font-weight: 600;
+    font-size: 27px;
+    letter-spacing: 0.5px;
+    color: white;
+    border-radius: 6px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 1.5rem;
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;    
+}
+
+#h2-subtitulo-faq {
+    text-align: left;
+    font-family: Tittle-drawed2;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0rem;
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.card-faq {
+    max-height: 25rem;
+    padding: 1rem;
+    padding-top: 0rem;
+    opacity: 90%;
+    overflow-y: auto;
+    background-color: #00000041;
+}
+
+#contenedor-faq::-webkit-scrollbar, 
+#card-faq::-webkit-scrollbar {
+    width: 7px;
+}
+
+#contenedor-faq::-webkit-scrollbar-thumb,
+#card-faq::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #a5a5a5;
+}
+
+mat-expansion-panel-header {
+    font-family: Tittle-drawed;
+    font-weight: 600;
+    animation:  text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.panel-de-expansion-faq {
+    opacity: 95%;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: left;
+    height: fit-content;
+}
+
+.rta-faq {
+    font-family: Text-drawed;
+}
+
+.paises-disponibles {
+    text-align: left;
+    border-left: 1px solid #cfcfcf;
+    margin-left: 0.5rem;
+}
+
+.bandera-pais {
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 995px) 
+{
+    .panel-de-expansion-faq {
+        min-height: 5rem;
+    }
+
+    mat-panel-title, .rta-faq {
+        padding-top: 1rem;
+    }
+
+    .paises-disponibles {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) 
+{
+    .card-faq {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    #h1-titulo-faq {
+        font-size: 22px;
+    }
+
+    .bandera-pais {
+        height: 25px;
+        width: 25px;
+    }
+
+    #h2-subtitulo-faq {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 355px) 
+{
+    .panel-de-expansion-faq {
+        min-height: 9rem;
+    }
+
+    mat-panel-title, .rta-faq {
+        padding-top: 5rem;
+    }
+}
+
+/**
+* ----------------------------------------
+* animation tracking-in-expand
+* ----------------------------------------
+*/
+@-webkit-keyframes tracking-in-expand {
+0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes tracking-in-expand {
+0% {
+letter-spacing: -0.5em;
+opacity: 0;
+}
+40% {
+opacity: 0.6;
+}
+100% {
+opacity: 1;
+}
+}
+
+/**
+* ----------------------------------------
+* animation text-focus-in
+* ----------------------------------------
+*/
+@-webkit-keyframes text-focus-in {
+0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+}
+100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+}
+}
+@keyframes text-focus-in {
+0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+}
+100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+}
 }

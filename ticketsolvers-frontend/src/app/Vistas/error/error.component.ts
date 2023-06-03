@@ -11,7 +11,7 @@ export class ErrorComponent {
   constructor(private router:Router)
   {
     let titulo:any = document.getElementById("titulo-superior");
-    titulo.textContent = "Ticketsolvers | 404";
+    titulo.textContent = "Ticketsolvers | Error 404";
   }
 
   volverInicio()

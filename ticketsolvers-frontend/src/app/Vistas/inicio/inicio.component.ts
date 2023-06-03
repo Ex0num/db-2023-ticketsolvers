@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -7,12 +8,11 @@ import { Component } from '@angular/core';
 })
 export class InicioComponent {
 
-  constructor()
+  constructor(private router:Router)
   {
     let titulo:any = document.getElementById("titulo-superior");
     titulo.textContent = "Ticketsolvers | Inicio";
   }
-
 
   mostrarAccesosDirectos = false;
   switchearAccesoDirecto():void
@@ -35,5 +35,10 @@ export class InicioComponent {
       fabSoporteTecnico?.setAttribute("hidden","true");
       fabSoporteFinanciero?.setAttribute("hidden","true");
     }
+  }
+
+  ver_mas_inicio()
+  {
+    this.router.navigateByUrl("/FAQ");
   }
 }

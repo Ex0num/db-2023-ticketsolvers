@@ -6,17 +6,17 @@
             <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-            <button mat-menu-item>
+            <button mat-menu-item (click)="open_CrearTicket_Dialog_buzon()">
                 <img src="../../../assets/icons/opciones-tabla/alta-ticket.png" class="opcion-tabla">
-                <span class="opcion-txt-tabla" (click)="open_CrearTicket_Dialog_buzon()">Crear ticket</span>
+                <span class="opcion-txt-tabla">Crear ticket</span>
             </button>
-            <button mat-menu-item>
+            <button mat-menu-item (click)="open_MostrarDatosPersonales_Dialog_buzon()">
                 <img src="../../../assets/icons/opciones-tabla/perfil.png" class="opcion-tabla">
-                <span class="opcion-txt-tabla" (click)="open_MostrarDatosPersonales_Dialog_buzon()">Mis datos</span>
+                <span class="opcion-txt-tabla">Mis datos</span>
             </button>
-            <button mat-menu-item>
+            <button mat-menu-item (click)="cerrarSesion_Dialog_buzon()">
                 <img src="../../../assets/icons/opciones-tabla/cerrar-sesion.png" class="opcion-tabla">
-                <span class="opcion-txt-tabla" (click)="cerrarSesion_Dialog_buzon()">Cerrar sesión</span>
+                <span class="opcion-txt-tabla" >Cerrar sesión</span>
             </button>
         </mat-menu>
 
@@ -30,9 +30,10 @@
                 <mat-label class="label-filtrador-tabla">Filtrar por estado</mat-label>
                 <mat-select class="input-filtrar-ticket-tabla" [(value)]="selected">
                   <mat-option class="txt-drawed">Cualquiera</mat-option>
-                  <mat-option class="txt-drawed" value="option1">Abierto</mat-option>
-                  <mat-option class="txt-drawed" value="option2">Esperando su respuesta</mat-option>
-                  <mat-option class="txt-drawed" value="option3">Resuelto</mat-option>
+                  <mat-option class="txt-drawed" value="abierto">Abierto</mat-option>
+                  <mat-option class="txt-drawed" value="esperando-su-respuesta">Esperando su respuesta</mat-option>
+                  <mat-option class="txt-drawed" value="esperando-agente-respuesta">Esperando respuesta de agente</mat-option>
+                  <mat-option class="txt-drawed" value="resuelto">Resuelto</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>

@@ -1,0 +1,198 @@
+#seccion-buzon {
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#contenedor-tabla-tickets {
+    width: 90%;
+    margin-left: 5%;
+    opacity: 90%;
+    height: 90%;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+#titulo-tabla-tickets {
+    font-family: Tittle-drawed2;
+    font-size: 26px;
+    background-color: whitesmoke;
+    padding: 1rem;
+    padding-right: 3rem;
+    position: relative;
+}
+
+#boton-menu-tabla-tickets {
+    margin-top: 0rem;
+    position: absolute;
+    right: 15px;
+}
+
+.opcion-tabla {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+.opcion-txt-tabla {
+    font-family: Text-drawed;
+}
+
+#columna-tickets-abiertos, #columna-agentes-disponibles
+{
+    margin-top: 1rem;
+    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 33rem;
+}
+
+#titulo-columna-tickets, #titulo-columna-agentes
+{
+    width: 100%;
+    font-family: Tittle-drawed2;
+    font-size: 26px;
+    background-color: whitesmoke;
+    padding: 1rem;
+    padding-right: 3rem;
+    position: relative;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+
+#titulo-columna-agentes
+{
+    margin-left: 0px;
+}
+
+/* -------------- Items tickets -------------- */
+.item-ticket
+{  
+    background-color: #eeeeee;
+    /* border: 1px solid #bbbbbb; */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.titulo-ticket
+{
+    padding: 0.5rem;
+    margin: 0px;
+    font-size: 17px;
+    text-align: left;
+    font-family: Text-drawed;    
+    color: #8f4141;
+}
+
+.btn-asignar-ticket, .btn-banear-ticket
+{
+    width: 4rem;
+    margin-left: 0.5rem;
+}
+
+.columna-banear-ticket
+{
+    text-align: right;
+}
+
+.img-banear-ticket,
+.img-asignar-ticket
+{
+    
+    height: 35px;
+    width: 35px;
+    
+    border-radius: 20%;
+    padding: 0.3rem;
+}
+
+.asunto-ticket, 
+.cliente-ticket, 
+.actualizacion-ticket, 
+.estado-ticket,
+.codigo-ticket
+{
+    padding: 0.5rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 16px;
+    text-align: left;
+    font-family: Text-drawed;
+}
+
+.valor-titulo-ticket, 
+.valor-asunto-ticket, 
+.valor-cliente-ticket, 
+.valor-actualizacion-ticket, 
+.valor-estado-ticket,
+.valor-codigo-ticket
+{
+    font-weight: 600;
+}
+
+.item-ticket:hover, .item-agente:hover
+{
+    background-color: #d8d8d8;
+    transition: background-color 1s ease;
+}
+/* ---------------- Items agentes ------------------ */
+
+.item-agente
+{
+    background-color: #eeeeee;
+    /* border: 1px solid #bbbbbb; */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.nombre-agente
+{
+    padding: 0.5rem;
+    margin: 0px;
+    font-size: 17px;
+    text-align: left;
+    font-family: Text-drawed;    
+    color: #8f4141;
+}
+
+.valor-nombre-agente
+{
+    color: #8f4141;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    font-family: Text-drawed;
+}
+
+.cantidad-tickets-resueltos,
+.cantidad-tickets-derivados
+{
+    padding: 0.5rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 16px;
+    text-align: left;
+    font-family: Text-drawed;
+}
+
+
+.valor-cantidad-tickets-resueltos,
+.valor-cantidad-tickets-derivados
+{
+    font-weight: 600;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 430px) 
+{
+    .btn-asignar-ticket, .btn-banear-ticket {
+        margin-left: 0.1rem;
+        margin-top: 0.8rem;
+        width: 100%;
+    }
+}

@@ -1,3 +1,166 @@
-<div id="seccion-faq">
-    <h3 id="pregunta-faq">¿Pueden resolver mis inconvenientes?</h3>
+<section id="seccion-faq">
+    <div class="container" id="contenedor-faq">
+    <h1 id="h1-titulo-faq">Acceda al listado de preguntas más frecuentes.</h1>
+
+    <div class="row">
+        <div class="col-md-6 d-flex flex-column">            
+            <mat-card class="card-faq">       
+                    <div class="col">
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>1) ¿Cómo puedo acceder a los datos de exportaciones e importaciones que ofrecen?</mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p class="rta-faq">
+                                Para acceder a los datos de exportaciones e importaciones, se le proporcionará un nombre de usuario y una 
+                                contraseña al adquirir el pase al sistema.
+                            </p>
+                        </mat-expansion-panel>
+            
+                        <mat-divider></mat-divider>
+
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>2) ¿Puedo obtener muestras de los datos antes de comprar el servicio?</mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p class="rta-faq">
+                                Sí, ofrecemos una versión demo del servicio para que pueda evaluarlo antes de tomar una decisión de compra.
+                            </p>
+                        </mat-expansion-panel>
+            
+                        <mat-divider></mat-divider>
+
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>3) ¿Cuántas bases de datos diferentes manejan y qué tipo de información contienen?</mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p class="rta-faq">
+                                Actualmente manejamos alrededor de 30 bases de datos con millones de registros. Estas bases de datos 
+                                contienen información detallada sobre exportaciones e importaciones, con más de 20 campos de información en cada una.
+                            </p>
+                        </mat-expansion-panel>
+
+                        <mat-divider></mat-divider>
+
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>4) ¿Cómo puedo filtrar y buscar información específica dentro de los datos?</mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p class="rta-faq">
+                                Puede filtrar y buscar información específica seleccionando opciones y campos relevantes en el sistema 
+                                después de haber seleccionado un país. Simplemente abra los menús desplegables y seleccione los valores de su interés.
+                            </p>
+                        </mat-expansion-panel>
+                        
+                        <mat-divider></mat-divider>
+
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>5) ¿Qué tipos de formatos ofrecen para descargar la información?</mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p class="rta-faq">
+                                Actualmente ofrecemos la descarga de la información en formato .xlsx (Excel). Próximamente incorporaremos otros formatos 
+                                como JSON y TXT.
+                            </p>
+                        </mat-expansion-panel>
+                    </div>   
+            </mat-card>
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+            <mat-card class="card-faq">
+                <div class="col">                 
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>6) ¿Cuál es el nivel de precisión y confiabilidad de los datos que ofrecen?</mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="rta-faq">
+                            La precisión y confiabilidad de los datos son de máxima importancia para nosotros. Nos aseguramos de que la información 
+                            esté procesada y formateada sin errores. Sin embargo, si encuentra algún posible error, le invitamos a comunicárnoslo 
+                            para que podamos tomar las medidas necesarias.
+                        </p>
+                    </mat-expansion-panel>
+            
+                    <mat-divider></mat-divider>
+        
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>7) ¿Con qué frecuencia actualizan los datos y cómo puedo estar al tanto?</mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="rta-faq">
+                            Actualizamos los datos aproximadamente cada 15 días. En el sistema encontrará la fecha de la última actualización para estar al 
+                            tanto de la información más reciente.
+                        </p>
+                    </mat-expansion-panel>
+        
+                    <mat-divider></mat-divider>
+        
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>8) ¿Cuáles son los países que actualmente están disponibles?</mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="rta-faq">
+                            Trabajamos con una amplia variedad de países. A continuación, se muestra un listado detallado de los países disponibles:
+                        </p>
+        
+                        <div class="row" style="margin-top: 2rem;">
+                            <div class="col-4 mx-0 paises-disponibles" style="padding-top: 0px;">
+                                <li><b><img src="../../../assets/paises/icon-arg.png" class="bandera-pais" alt="bandera Argentina"> Argentina</b></li>
+                                <li><img src="../../../assets/paises/icon-bol.png" class="bandera-pais" alt="bandera Bolivia"> Bolivia</li>
+                                <li><img src="../../../assets/paises/icon-bra.png" class="bandera-pais" alt="bandera Brasil"> Brasil</li>
+                                <li><b><img src="../../../assets/paises/icon-chi.png" class="bandera-pais" alt="bandera Chile"> Chile</b></li>
+                                <li><img src="../../../assets/paises/icon-col.png" class="bandera-pais" alt="bandera Colombia"> Colombia</li>
+                                <li><img src="../../../assets/paises/icon-cos.png" class="bandera-pais" alt="bandera Costa Rica"> Costa Rica</li>
+                            </div>
+                    
+                            <div class="col-4 mx-0 paises-disponibles">
+                                <li><img src="../../../assets/paises/icon-ecu.png" class="bandera-pais" alt="bandera Ecuador"> Ecuador</li>
+                                <li><img src="../../../assets/paises/icon-els.png" class="bandera-pais" alt="bandera El Salvador"> El Salvador</li>
+                                <li><img src="../../../assets/paises/icon-esp.png" class="bandera-pais" alt="bandera España"> España</li>
+                                <li><img src="../../../assets/paises/icon-hon.png" class="bandera-pais" alt="bandera Honduras"> Honduras</li>
+                                <li><img src="../../../assets/paises/icon-mex.png" class="bandera-pais" alt="bandera México"> México</li>
+                                <li><img src="../../../assets/paises/icon-pan.png" class="bandera-pais" alt="bandera Panamá"> Panamá</li>
+                            </div>
+                    
+                            <div class="col-4 mx-0 paises-disponibles" style="border-bottom: 0px;">
+                                <li><img src="../../../assets/paises/icon-par.png" class="bandera-pais" alt="bandera Paraguay"> Paraguay</li>
+                                <li><img src="../../../assets/paises/icon-per.png" class="bandera-pais" alt="bandera Perú"> Perú</li>
+                                <li><img src="../../../assets/paises/icon-rep.png" class="bandera-pais" alt="bandera Rep. Dominicana"> Rep. Dominicana</li>
+                                <li><b><img src="../../../assets/paises/icon-uru.png" class="bandera-pais" alt="bandera Uruguay"> Uruguay</b></li>
+                                <li><img src="../../../assets/paises/icon-ven.png" class="bandera-pais" alt="bandera Venezuela"> Venezuela</li>
+                            </div>
+                        </div> 
+                    </mat-expansion-panel>
+        
+                    <mat-divider></mat-divider>
+        
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>9) ¿Tienen algún otro medio o plataforma?</mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="rta-faq">
+                            Sí. Además del sitio web Tesys, contamos con una aplicación en la Play Store de Android llamada "Tesys".
+                        </p>
+                    </mat-expansion-panel>
+        
+                    <mat-divider></mat-divider>
+        
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-de-expansion-faq">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>10) ¿Qué puedo hacer si no puedo obtener la información que estoy buscando?</mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="rta-faq">
+                            Si enfrenta dificultades para obtener la información que busca, le recomendamos contactarnos. 
+                            Contamos con un equipo de personas especializadas que estarán encantadas de ayudarle a resolver 
+                            cualquier problema o duda que pueda tener.
+                        </p>
+                    </mat-expansion-panel>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+
+
+
+    <h2 id="h2-subtitulo-faq">¿No encontró su pregunta? Contáctenos personalmente <a href="/contacto">aquí.</a></h2>
+
 </div>
+</section>

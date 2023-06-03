@@ -31,6 +31,9 @@
     color: white;
     padding-top: 2rem;
     padding-left: 2rem;
+    background-color: #00000041;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 #parrafo-3-computer
@@ -78,6 +81,7 @@
 #items-contacto
 {
     padding-left: 2rem;
+    margin-top: 1rem;
 }
 
 .icono-contacto
